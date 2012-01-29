@@ -1,0 +1,48 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.internatDB.data.Student" table="student" dynamic-insert="false" dynamic-update="false">
+        <id name="id" type="integer">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <property name="priezvisko" type="string">
+            <column name="priezvisko"/>
+        </property>
+        <property name="meno" type="string">
+            <column name="meno"/>
+        </property>
+        <property name="datumNarodenia" type="date">
+            <column name="datumNarodenia"/>
+        </property>
+        <property name="rodneCislo" type="string">
+            <column name="rodneCislo"/>
+        </property>
+        <property name="miestoNarodenia" type="string">
+            <column name="miestoNarodenia"/>
+        </property>
+        <property name="ulica" type="string">
+            <column name="ulica"/>
+        </property>
+        <property name="mesto" type="string">
+            <column name="mesto"/>
+        </property>
+        <property name="psc" type="string">
+            <column name="psc"/>
+        </property>
+        <property name="cisloOp" type="string">
+            <column name="cisloOp"/>
+        </property>
+        <property name="telefon" type="string">
+            <column name="telefon"/>
+        </property>
+        <property name="datumNastup" type="date">
+            <column name="datumNastup"/>
+        </property>
+        <property name="datumVystup" type="date">
+            <column name="datumVystup"/>
+        </property>
+        <property name="newcol" type="integer">
+            <column name="newcol"/>
+        </property>
+    </class>
+</hibernate-mapping>

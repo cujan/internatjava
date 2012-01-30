@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" springFile="internatDB.spring.xml" type="DataService" CRUDService="true" class="com.internatdb.InternatDB" id="internatDB">
+    <operation name="getTriedaById" operationType="hqlquery">
+        <parameter isList="false" typeRef="java.lang.Integer" name="id"/>
+        <return isList="false" typeRef="com.internatdb.data.Trieda"/>
+    </operation>
+    <dataobjects>
+        <dataobject supportsQuickData="true" javaType="com.internatdb.data.Student">
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+                <exclude>insert</exclude>
+            </element>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="priezvisko"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="meno"/>
+            <element allowNull="true" isList="false" typeRef="java.util.Date" name="datumnarodenia"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="rodnecislo"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="miestonarodenia"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="ulica"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="mesto"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="psc"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="cisloop"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="telefon"/>
+            <element allowNull="true" isList="false" typeRef="java.util.Date" name="datumnastup"/>
+            <element allowNull="true" isList="false" typeRef="java.util.Date" name="datumvystup"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.Integer" name="cisloizby"/>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.internatdb.data.Trieda">
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+                <exclude>insert</exclude>
+            </element>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="nazov"/>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.internatdb.data.Vychovavatel">
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+                <exclude>insert</exclude>
+            </element>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="titualpred"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="priezvisko"/>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="meno"/>
+        </dataobject>
+        <dataobject supportsQuickData="true" javaType="com.internatdb.data.Vychovnaskupina">
+            <element allowNull="false" isList="false" typeRef="java.lang.Integer" name="id">
+                <require>delete</require>
+                <require>read</require>
+                <require>update</require>
+                <noChange>delete</noChange>
+                <noChange>read</noChange>
+                <noChange>update</noChange>
+                <exclude>insert</exclude>
+            </element>
+            <element allowNull="true" isList="false" typeRef="java.lang.String" name="nazov"/>
+        </dataobject>
+    </dataobjects>
+</service>

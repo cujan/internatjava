@@ -1,0 +1,18 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.internatdb.data.Vychovavatel" table="VYCHOVAVATEL" schema="PUBLIC" dynamic-insert="false" dynamic-update="false">
+        <id name="id" type="integer">
+            <column name="ID"/>
+            <generator class="identity"/>
+        </id>
+        <property name="titualpred" type="string">
+            <column name="TITUALPRED"/>
+        </property>
+        <property name="priezvisko" type="string">
+            <column name="PRIEZVISKO"/>
+        </property>
+        <property name="meno" type="string">
+            <column name="MENO"/>
+        </property>
+    </class>
+</hibernate-mapping>

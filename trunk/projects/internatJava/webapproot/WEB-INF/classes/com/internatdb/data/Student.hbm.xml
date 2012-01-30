@@ -1,0 +1,48 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.internatdb.data.Student" table="STUDENT" schema="PUBLIC" dynamic-insert="false" dynamic-update="false">
+        <id name="id" type="integer">
+            <column name="ID"/>
+            <generator class="identity"/>
+        </id>
+        <property name="priezvisko" type="string">
+            <column name="PRIEZVISKO"/>
+        </property>
+        <property name="meno" type="string">
+            <column name="MENO"/>
+        </property>
+        <property name="datumnarodenia" type="date">
+            <column name="DATUMNARODENIA"/>
+        </property>
+        <property name="rodnecislo" type="string">
+            <column name="RODNECISLO"/>
+        </property>
+        <property name="miestonarodenia" type="string">
+            <column name="MIESTONARODENIA"/>
+        </property>
+        <property name="ulica" type="string">
+            <column name="ULICA"/>
+        </property>
+        <property name="mesto" type="string">
+            <column name="MESTO"/>
+        </property>
+        <property name="psc" type="string">
+            <column name="PSC"/>
+        </property>
+        <property name="cisloop" type="string">
+            <column name="CISLOOP"/>
+        </property>
+        <property name="telefon" type="string">
+            <column name="TELEFON"/>
+        </property>
+        <property name="datumnastup" type="date">
+            <column name="DATUMNASTUP"/>
+        </property>
+        <property name="datumvystup" type="date">
+            <column name="DATUMVYSTUP"/>
+        </property>
+        <property name="cisloizby" type="integer">
+            <column name="CISLOIZBY"/>
+        </property>
+    </class>
+</hibernate-mapping>

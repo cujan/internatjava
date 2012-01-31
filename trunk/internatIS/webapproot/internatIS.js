@@ -5,7 +5,7 @@ dojo.declare("internatIS", wm.Application, {
 	"main": "Main", 
 	"projectSubVersion": "Alpha", 
 	"projectVersion": 1, 
-	"saveCounter": 4, 
+	"saveCounter": 7, 
 	"studioVersion": "6.4.4GA", 
 	"theme": "wm_default", 
 	"toastPosition": "br",

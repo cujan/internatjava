@@ -3,6 +3,11 @@
     <bean scope="singleton" parent="typeManagerBase" class="com.wavemaker.runtime.service.TypeManager" id="typeManager">
         <property name="types">
             <map merge="true">
+                <entry key="internatDB">
+                    <list>
+                        <value>com.internatDB.data.Student</value>
+                    </list>
+                </entry>
                 <entry key="runtimeService">
                     <list>
                         <value>com.wavemaker.runtime.service.PagingOptions</value>

@@ -13,7 +13,7 @@ Main.widgets = {
 				}],
 				panel10: ["wm.Panel", {"height":"100%","horizontalAlign":"left","verticalAlign":"middle","width":"300px"}, {}, {
 					panel15: ["wm.Panel", {"height":"24px","horizontalAlign":"left","layoutKind":"left-to-right","verticalAlign":"middle","width":"100%"}, {}, {
-						text1: ["wm.Text", {"dataValue":undefined,"displayValue":"","placeHolder":"Search","resetButton":true,"width":"100%"}, {}],
+						text1: ["wm.Text", {"border":"0","dataValue":undefined,"displayValue":"","placeHolder":"Search","resetButton":true,"width":"100%"}, {}],
 						picture5: ["wm.Picture", {"border":"0","height":"16px","source":"lib/images/silkIcons/zoom.png","width":"16px"}, {}]
 					}]
 				}]
@@ -23,7 +23,7 @@ Main.widgets = {
 					dojoMenu1: ["wm.DojoMenu", {"_classes":{"domNode":["ClickableDojoMenu"]},"eventList":[],"fullStructure":[{"label":"Študent","defaultLabel":"Študent","iconClass":undefined,"imageList":undefined,"onClick":"studentLayer","children":[]},{"label":"Trieda","defaultLabel":"Trieda","iconClass":undefined,"imageList":undefined,"onClick":"triedaLayer","children":[]},{"label":"Skupina","defaultLabel":"Skupina","iconClass":undefined,"imageList":undefined,"onClick":"skupinaLayer","children":[]},{"label":"Škola","defaultLabel":"Škola","iconClass":undefined,"imageList":undefined,"onClick":"skolaLayer","children":[]},{"label":"Vychovávateľ","defaultLabel":"Vychovávateľ","iconClass":undefined,"imageList":undefined,"onClick":"vychovavatelLayer","children":[]}],"height":"100%","localizationStructure":{},"padding":"20,0,0,0","transparent":false,"vertical":true}, {}]
 				}],
 				Layers: ["wm.Layers", {}, {}, {
-					studentLayer: ["wm.Layer", {"borderColor":"","caption":"Študent","horizontalAlign":"left","themeStyleType":"","verticalAlign":"top"}, {}, {
+					studentLayer: ["wm.Layer", {"borderColor":"","caption":"Študent","horizontalAlign":"left","margin":"2,0,2,0","themeStyleType":"","verticalAlign":"top"}, {}, {
 						studentLivePanel1: ["wm.LivePanel", {"horizontalAlign":"left","verticalAlign":"top"}, {}, {
 							studentGridPanel: ["wm.FancyPanel", {"minHeight":"180","title":"Student"}, {}, {
 								studentDojoGrid: ["wm.DojoGrid", {"_classes":{"domNode":["omgDataGrid"]},"border":"0","columns":[{"show":true,"id":"id","title":"Id","width":"80px","displayType":"Number","noDelete":true,"align":"right","formatFunc":""},{"show":true,"id":"priezvisko","title":"Priezvisko","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":true,"id":"meno","title":"Meno","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":true,"id":"datumNarodenia","title":"DatumNarodenia","width":"80px","displayType":"Date","noDelete":true,"align":"left","formatFunc":"wm_date_formatter"},{"show":true,"id":"rodneCislo","title":"RodneCislo","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":true,"id":"miestoNarodenia","title":"MiestoNarodenia","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":true,"id":"ulica","title":"Ulica","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":true,"id":"mesto","title":"Mesto","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":true,"id":"psc","title":"Psc","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":true,"id":"cisloOp","title":"CisloOp","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":true,"id":"telefon","title":"Telefon","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":true,"id":"datumNastup","title":"DatumNastup","width":"80px","displayType":"Date","noDelete":true,"align":"left","formatFunc":"wm_date_formatter"},{"show":true,"id":"datumVystup","title":"DatumVystup","width":"80px","displayType":"Date","noDelete":true,"align":"left","formatFunc":"wm_date_formatter"},{"show":true,"id":"cisloIzby","title":"CisloIzby","width":"80px","displayType":"Number","noDelete":true,"align":"right","formatFunc":""},{"show":true,"id":"idSkupina","title":"IdSkupina","width":"80px","displayType":"Number","noDelete":true,"align":"right","formatFunc":""},{"show":false,"id":"idTrieda","title":"IdTrieda","width":"80px","displayType":"Number","noDelete":true,"align":"right","formatFunc":""},{"show":false,"id":"idSkola","title":"IdSkola","width":"80px","displayType":"Number","noDelete":true,"align":"right","formatFunc":""}],"height":"100%","localizationStructure":{},"margin":"4"}, {}, {
@@ -81,7 +81,7 @@ Main.widgets = {
 							}]
 						}]
 					}],
-					triedaLayer: ["wm.Layer", {"borderColor":"","caption":"Trieda","horizontalAlign":"left","themeStyleType":"","verticalAlign":"top"}, {}, {
+					triedaLayer: ["wm.Layer", {"borderColor":"","caption":"Trieda","horizontalAlign":"left","margin":"2,0,2,0","themeStyleType":"","verticalAlign":"top"}, {}, {
 						triedaLivePanel1: ["wm.LivePanel", {"horizontalAlign":"left","verticalAlign":"top"}, {}, {
 							triedaGridPanel: ["wm.FancyPanel", {"minHeight":"180","title":"Trieda"}, {}, {
 								triedaDojoGrid: ["wm.DojoGrid", {"_classes":{"domNode":["omgDataGrid"]},"border":"0","columns":[{"show":true,"id":"id","title":"Id","width":"80px","displayType":"Number","noDelete":true,"align":"right","formatFunc":""},{"show":true,"id":"nazov","title":"Nazov","width":"80px","displayType":"Number","noDelete":true,"align":"right","formatFunc":""}],"height":"100%","margin":"4"}, {}, {
@@ -124,7 +124,7 @@ Main.widgets = {
 							}]
 						}]
 					}],
-					skupinaLayer: ["wm.Layer", {"borderColor":"","caption":"Skupina","horizontalAlign":"left","themeStyleType":"","verticalAlign":"top"}, {}, {
+					skupinaLayer: ["wm.Layer", {"borderColor":"","caption":"Skupina","horizontalAlign":"left","margin":"2,0,2,0","themeStyleType":"","verticalAlign":"top"}, {}, {
 						skupinaLivePanel1: ["wm.LivePanel", {"horizontalAlign":"left","verticalAlign":"top"}, {}, {
 							skupinaGridPanel: ["wm.FancyPanel", {"minHeight":"180","title":"Skupina"}, {}, {
 								skupinaDojoGrid: ["wm.DojoGrid", {"_classes":{"domNode":["omgDataGrid"]},"border":"0","columns":[{"show":true,"id":"id","title":"Id","width":"80px","displayType":"Number","noDelete":true,"align":"right","formatFunc":""},{"show":true,"id":"nazovSkupiny","title":"NazovSkupiny","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":true,"id":"idVychovavatel","title":"IdVychovavatel","width":"80px","displayType":"Number","noDelete":true,"align":"right","formatFunc":""}],"height":"100%","margin":"4"}, {}, {
@@ -168,7 +168,7 @@ Main.widgets = {
 							}]
 						}]
 					}],
-					skolaLayer: ["wm.Layer", {"borderColor":"","caption":"Škola","horizontalAlign":"left","themeStyleType":"","verticalAlign":"top"}, {}, {
+					skolaLayer: ["wm.Layer", {"borderColor":"","caption":"Škola","horizontalAlign":"left","margin":"2,0,2,0","themeStyleType":"","verticalAlign":"top"}, {}, {
 						skolaLivePanel1: ["wm.LivePanel", {"horizontalAlign":"left","verticalAlign":"top"}, {}, {
 							skolaGridPanel: ["wm.FancyPanel", {"minHeight":"180","title":"Skola"}, {}, {
 								skolaDojoGrid: ["wm.DojoGrid", {"_classes":{"domNode":["omgDataGrid"]},"border":"0","columns":[{"show":true,"id":"id","title":"Id","width":"80px","displayType":"Number","noDelete":true,"align":"right","formatFunc":""},{"show":true,"id":"nazov","title":"Nazov","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":true,"id":"adresa","title":"Adresa","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""}],"height":"100%","margin":"4"}, {}, {
@@ -212,7 +212,7 @@ Main.widgets = {
 							}]
 						}]
 					}],
-					vychovavatelLayer: ["wm.Layer", {"borderColor":"","caption":"Vychovávateľ","horizontalAlign":"left","themeStyleType":"","verticalAlign":"top"}, {}, {
+					vychovavatelLayer: ["wm.Layer", {"borderColor":"","caption":"Vychovávateľ","horizontalAlign":"left","margin":"2,0,2,0","themeStyleType":"","verticalAlign":"top"}, {}, {
 						vychovavatelLivePanel1: ["wm.LivePanel", {"horizontalAlign":"left","verticalAlign":"top"}, {}, {
 							vychovavatelGridPanel: ["wm.FancyPanel", {"minHeight":"180","title":"Vychovavatel"}, {}, {
 								vychovavatelDojoGrid: ["wm.DojoGrid", {"_classes":{"domNode":["omgDataGrid"]},"border":"0","columns":[{"show":true,"id":"id","title":"Id","width":"80px","displayType":"Number","noDelete":true,"align":"right","formatFunc":""},{"show":true,"id":"priezvisko","title":"Priezvisko","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":true,"id":"meno","title":"Meno","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""}],"height":"100%","margin":"4"}, {}, {

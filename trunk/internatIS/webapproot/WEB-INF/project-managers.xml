@@ -5,7 +5,11 @@
             <map merge="true">
                 <entry key="internatDB">
                     <list>
+                        <value>com.internatDB.data.Skola</value>
+                        <value>com.internatDB.data.Skupina</value>
                         <value>com.internatDB.data.Student</value>
+                        <value>com.internatDB.data.Trieda</value>
+                        <value>com.internatDB.data.Vychovavatel</value>
                     </list>
                 </entry>
                 <entry key="runtimeService">

@@ -46,7 +46,11 @@
         </property>
         <property name="mappingResources">
             <list>
+                <value>com/internatDB/data/Skola.hbm.xml</value>
+                <value>com/internatDB/data/Skupina.hbm.xml</value>
                 <value>com/internatDB/data/Student.hbm.xml</value>
+                <value>com/internatDB/data/Trieda.hbm.xml</value>
+                <value>com/internatDB/data/Vychovavatel.hbm.xml</value>
                 <value>com/internatDB/data/app-queries.ql.xml</value>
             </list>
         </property>

@@ -1,0 +1,15 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.internatDB.data.Skupina" table="skupina" dynamic-insert="false" dynamic-update="false">
+        <id name="id" type="integer">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <property name="nazovSkupiny" type="string">
+            <column name="nazovSkupiny"/>
+        </property>
+        <property name="idVychovavatel" type="integer">
+            <column name="idVychovavatel"/>
+        </property>
+    </class>
+</hibernate-mapping>

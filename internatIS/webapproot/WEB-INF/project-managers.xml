@@ -18,6 +18,9 @@
                         <value>com.wavemaker.runtime.service.PropertyOptions</value>
                     </list>
                 </entry>
+                <entry key="securityService">
+                    <list/>
+                </entry>
             </map>
         </property>
     </bean>

@@ -357,6 +357,43 @@ wm.types = {
 			"liveService": true,
 			"service": "internatDB"
 		},
+		"com.wavemaker.runtime.server.DownloadResponse": {
+			"fields": {
+				"contentType": {
+					"exclude": [],
+					"fieldOrder": 0,
+					"fieldSubType": null,
+					"include": [],
+					"isList": false,
+					"noChange": [],
+					"required": true,
+					"type": "java.lang.String"
+				},
+				"contents": {
+					"exclude": [],
+					"fieldOrder": 1,
+					"fieldSubType": null,
+					"include": [],
+					"isList": false,
+					"noChange": [],
+					"required": true,
+					"type": "java.io.InputStream"
+				},
+				"fileName": {
+					"exclude": [],
+					"fieldOrder": 2,
+					"fieldSubType": null,
+					"include": [],
+					"isList": false,
+					"noChange": [],
+					"required": true,
+					"type": "java.lang.String"
+				}
+			},
+			"internal": false,
+			"liveService": false,
+			"service": "reportService"
+		},
 		"com.wavemaker.runtime.service.PagingOptions": {
 			"fields": {
 				"firstResult": {

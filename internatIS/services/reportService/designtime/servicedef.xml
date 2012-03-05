@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" springFile="reportService.spring.xml" type="JavaService" CRUDService="false" class="reportService" id="reportService">
+    <operation name="getReport">
+        <return isList="false" typeRef="com.wavemaker.runtime.server.DownloadResponse"/>
+    </operation>
+    <dataobjects>
+        <dataobject supportsQuickData="false" name="DownloadResponse" javaType="com.wavemaker.runtime.server.DownloadResponse">
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="contentType"/>
+            <element allowNull="false" isList="false" typeRef="java.io.InputStream" name="contents"/>
+            <element allowNull="false" isList="false" typeRef="java.lang.String" name="fileName"/>
+        </dataobject>
+    </dataobjects>
+</service>

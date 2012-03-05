@@ -12,6 +12,11 @@
                         <value>com.internatDB.data.vychovavatel</value>
                     </list>
                 </entry>
+                <entry key="reportService">
+                    <list>
+                        <value>com.wavemaker.runtime.server.DownloadResponse</value>
+                    </list>
+                </entry>
                 <entry key="runtimeService">
                     <list>
                         <value>com.wavemaker.runtime.service.PagingOptions</value>

@@ -9,7 +9,10 @@ Main.widgets = {
 			panelHeader: ["wm.HeaderContentPanel", {"height":"65px","horizontalAlign":"left","layoutKind":"left-to-right","padding":"0,10,0,10","verticalAlign":"middle","width":"100%"}, {}, {
 				picture1: ["wm.Picture", {"border":"0","height":"50px","source":"lib/wm/base/widget/themes/default/images/wmLogo.png","width":"62px"}, {}],
 				label2: ["wm.Label", {"border":"0","caption":"Internat IS","height":"35px","padding":"4","width":"100%"}, {}, {
-					format: ["wm.DataFormatter", {}, {}]
+					format: ["wm.DataFormatter", {}, {}],
+					binding: ["wm.Binding", {}, {}, {
+						wire: ["wm.Wire", {"expression":"\"services/reportService.download?method=getReport\"","source":false,"targetProperty":"link"}, {}]
+					}]
 				}],
 				panel10: ["wm.Panel", {"height":"100%","horizontalAlign":"left","verticalAlign":"middle","width":"300px"}, {}, {
 					panel15: ["wm.Panel", {"height":"24px","horizontalAlign":"left","layoutKind":"left-to-right","verticalAlign":"middle","width":"100%"}, {}, {
@@ -24,7 +27,7 @@ Main.widgets = {
 			panelContent: ["wm.MainContentPanel", {"height":"100%","horizontalAlign":"left","layoutKind":"left-to-right","verticalAlign":"top","width":"100%"}, {}, {
 				fancyPanel1: ["wm.FancyPanel", {"title":""}, {}, {
 					layers1: ["wm.Layers", {}, {}, {
-						studentLayer: ["wm.Layer", {"borderColor":"","caption":"layer1","horizontalAlign":"left","themeStyleType":"","verticalAlign":"top"}, {}, {
+						studentLayer: ["wm.Layer", {"borderColor":"","caption":"layer1","horizontalAlign":"left","margin":"2,0,2,0","themeStyleType":"","verticalAlign":"top"}, {}, {
 							studentLivePanel1: ["wm.LivePanel", {"horizontalAlign":"left","verticalAlign":"top"}, {}, {
 								studentGridPanel: ["wm.FancyPanel", {"minHeight":"180","title":"Student"}, {}, {
 									studentDojoGrid: ["wm.DojoGrid", {"_classes":{"domNode":["omgDataGrid"]},"border":"0","columns":[{"show":false,"id":"id","title":"Id","width":"80px","displayType":"Number","noDelete":true,"align":"right","formatFunc":""},{"show":true,"id":"priezvisko","title":"Priezvisko","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":true,"id":"meno","title":"Meno","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":true,"id":"datumNarodenia","title":"DatumNarodenia","width":"80px","displayType":"Date","noDelete":true,"align":"left","formatFunc":"wm_date_formatter"},{"show":true,"id":"rodneCislo","title":"RodneCislo","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":true,"id":"miestoNarodenia","title":"MiestoNarodenia","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":false,"id":"ulica","title":"Ulica","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":false,"id":"mesto","title":"Mesto","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":false,"id":"psc","title":"Psc","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":false,"id":"cisloOp","title":"CisloOp","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":false,"id":"telefon","title":"Telefon","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":false,"id":"datumNastup","title":"DatumNastup","width":"80px","displayType":"Date","noDelete":true,"align":"left","formatFunc":"wm_date_formatter"},{"show":false,"id":"datumVystup","title":"DatumVystup","width":"80px","displayType":"Date","noDelete":true,"align":"left","formatFunc":"wm_date_formatter"},{"show":true,"id":"cisloIzby","title":"CisloIzby","width":"80px","displayType":"Number","noDelete":true,"align":"right","formatFunc":""},{"show":true,"id":"idSkupina","title":"IdSkupina","width":"80px","displayType":"Number","noDelete":true,"align":"right","formatFunc":""},{"show":false,"id":"idTrieda","title":"IdTrieda","width":"80px","displayType":"Number","noDelete":true,"align":"right","formatFunc":""},{"show":false,"id":"idSkola","title":"IdSkola","width":"80px","displayType":"Number","noDelete":true,"align":"right","formatFunc":""}],"height":"100%","localizationStructure":{},"margin":"4"}, {}, {
@@ -81,7 +84,7 @@ Main.widgets = {
 								}]
 							}]
 						}],
-						skupinaLayer: ["wm.Layer", {"borderColor":"","caption":"layer2","horizontalAlign":"left","themeStyleType":"","verticalAlign":"top"}, {}, {
+						skupinaLayer: ["wm.Layer", {"borderColor":"","caption":"layer2","horizontalAlign":"left","margin":"2,0,2,0","themeStyleType":"","verticalAlign":"top"}, {}, {
 							skupinaLivePanel1: ["wm.LivePanel", {"horizontalAlign":"left","verticalAlign":"top"}, {}, {
 								skupinaGridPanel: ["wm.FancyPanel", {"minHeight":"180","title":"Skupina"}, {}, {
 									skupinaDojoGrid: ["wm.DojoGrid", {"_classes":{"domNode":["omgDataGrid"]},"border":"0","columns":[{"show":true,"id":"id","title":"Id","width":"80px","displayType":"Number","noDelete":true,"align":"right","formatFunc":""},{"show":true,"id":"nazovSkupiny","title":"NazovSkupiny","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":true,"id":"idVychovavatel","title":"IdVychovavatel","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""}],"height":"100%","margin":"4"}, {}, {
@@ -124,7 +127,7 @@ Main.widgets = {
 								}]
 							}]
 						}],
-						skolaLayer: ["wm.Layer", {"borderColor":"","caption":"layer1","horizontalAlign":"left","themeStyleType":"","verticalAlign":"top"}, {}, {
+						skolaLayer: ["wm.Layer", {"borderColor":"","caption":"layer1","horizontalAlign":"left","margin":"2,0,2,0","themeStyleType":"","verticalAlign":"top"}, {}, {
 							skolaLivePanel1: ["wm.LivePanel", {"horizontalAlign":"left","verticalAlign":"top"}, {}, {
 								skolaGridPanel: ["wm.FancyPanel", {"minHeight":"180","title":"Skola"}, {}, {
 									skolaDojoGrid: ["wm.DojoGrid", {"_classes":{"domNode":["omgDataGrid"]},"border":"0","columns":[{"show":true,"id":"id","title":"Id","width":"80px","displayType":"Number","noDelete":true,"align":"right","formatFunc":""},{"show":true,"id":"nazov","title":"Nazov","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":true,"id":"adresa","title":"Adresa","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""}],"height":"100%","margin":"4"}, {}, {
@@ -168,7 +171,7 @@ Main.widgets = {
 								}]
 							}]
 						}],
-						triedaLayer: ["wm.Layer", {"borderColor":"","caption":"layer1","horizontalAlign":"left","themeStyleType":"","verticalAlign":"top"}, {}, {
+						triedaLayer: ["wm.Layer", {"borderColor":"","caption":"layer1","horizontalAlign":"left","margin":"2,0,2,0","themeStyleType":"","verticalAlign":"top"}, {}, {
 							triedaLivePanel1: ["wm.LivePanel", {"horizontalAlign":"left","verticalAlign":"top"}, {}, {
 								triedaGridPanel: ["wm.FancyPanel", {"minHeight":"180","title":"Trieda"}, {}, {
 									triedaDojoGrid: ["wm.DojoGrid", {"_classes":{"domNode":["omgDataGrid"]},"border":"0","columns":[{"show":true,"id":"id","title":"Id","width":"80px","displayType":"Number","noDelete":true,"align":"right","formatFunc":""},{"show":true,"id":"nazov","title":"Nazov","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""}],"height":"100%","margin":"4"}, {}, {
@@ -211,7 +214,7 @@ Main.widgets = {
 								}]
 							}]
 						}],
-						vychovavatelLayer: ["wm.Layer", {"borderColor":"","caption":"layer1","horizontalAlign":"left","themeStyleType":"","verticalAlign":"top"}, {}, {
+						vychovavatelLayer: ["wm.Layer", {"borderColor":"","caption":"layer1","horizontalAlign":"left","margin":"2,0,2,0","themeStyleType":"","verticalAlign":"top"}, {}, {
 							vychovavatelLivePanel1: ["wm.LivePanel", {"horizontalAlign":"left","verticalAlign":"top"}, {}, {
 								vychovavatelGridPanel: ["wm.FancyPanel", {"minHeight":"180","title":"Vychovavatel"}, {}, {
 									vychovavatelDojoGrid: ["wm.DojoGrid", {"_classes":{"domNode":["omgDataGrid"]},"border":"0","columns":[{"show":true,"id":"id","title":"Id","width":"80px","displayType":"Number","noDelete":true,"align":"right","formatFunc":""},{"show":true,"id":"priezvisko","title":"Priezvisko","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":true,"id":"meno","title":"Meno","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":true,"id":"uzivatelskeMeno","title":"UzivatelskeMeno","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":true,"id":"heslo","title":"Heslo","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""},{"show":true,"id":"rola","title":"Rola","width":"100%","displayType":"Text","noDelete":true,"align":"left","formatFunc":""}],"height":"100%","margin":"4"}, {}, {
